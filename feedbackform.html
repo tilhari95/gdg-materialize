@@ -5,11 +5,12 @@
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="static/css/materialize.css"  media="screen,projection"/>
       <link rel="stylesheet" type="text/css" href="static/css/style.css">
+      <link rel="stylesheet" type="text/css" href="static/css/nouislider.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  		  <title>GDGJSS feedback_form</title>
     </head>
     <!-- header starts here -->
-    <body class="lime lighten-5" >
+    <body background="static/images/backgroundsmall.jpg" >
         <div class="row">
  			      <div class="row">
                 <div class="col s12 light-blue" style="display:inline-block"><h3 class="white-text center" style="font-weight:500"> Google Developers Group</h3>
@@ -23,8 +24,8 @@
     <!-- header ends here -->
 
     <!-- feedback form starts here -->
-        <div class="row">
-        <form class="col s12" action="#">
+        <div class="row container green lighten-5 hoverable" >
+        <form class="col s12" action="#" style="padding-top:30px">
             <div class="row">
                 <div class="input-field col s12 m6 ">
                   <i class="material-icons prefix">account_circle</i>
@@ -74,14 +75,14 @@
             </div>
       </br>
             <div class="row">
-      	       <div class="col s12 m6 hoverable">
-      	           <p class="black-text "><i class="material-icons prefix">swap_horiz</i>Rate the presenter(s)/speaker(s) of the event :</p> 
+      	       <div class="col s12 m6 ">
+      	           <p class="black-text "><i class="material-icons prefix">swap_horiz</i>Score the presenter(s)/speaker(s) of the event :</p> 
       	           <p class="range-field">
-      		            <input type="range" id="test5" min="40" max="100" />
+      		            <input type="range" id="test56" min="40" max="100" />
     		          </p> 
       	        </div>
-      	        <div class="col s12 m6 hoverable">
-      	           <p class="black-text"><i class="material-icons prefix">swap_horiz</i>Rate the contents (presentations,videos,etc) used in event:</p> 
+      	        <div class="col s12 m6 ">
+      	           <p class="black-text"><i class="material-icons prefix">swap_horiz</i>Score the content (presentation/videos etc) used in event :</p> 
       		         <p class="range-field">
       		         <input type="range" id="test5" min="40" max="100" />
     		           </p>
@@ -89,17 +90,17 @@
             </div>
      </br>
             <div class="row">
-      	       <div class="col s12 m6 hoverable">
-      	           <p class="black-text"><i class="material-icons prefix">swap_horiz</i>Was the event intersting and informative:</p> 
+      	       <div class="col s12 m6 ">
+      	           <p class="black-text"><i class="material-icons prefix">swap_horiz</i>Was the event intersting and informative :</p> 
       		         <p class="range-field">
-      		         <input type="range" id="test5" min="40" max="100" />
+      		         <input type="range" id="test566" min="40" max="100" />
     		           </p>
       	       </div>
-      	    <div class="col s12 m6  hoverable">
-      	           <p class="black-text"><i class="material-icons prefix">swap_horiz</i>Overall environment and experience of the event:</p>   
+      	    <div class="col s12 m6 ">
+      	           <p class="black-text"><i class="material-icons prefix">swap_horiz</i>Overall environment and experience of the event :</p>   
 
                    <p class="range-field">
-                   <input type="range" id="test5" min="40" max="100" />
+                   <input type="range" id="test543" min="40" max="100" />
                    </p>
                    <!-- star rating starts here -->
 
@@ -116,7 +117,7 @@
             </div>
      
             <div class="row">
-     	        <div class="col s12 m4 hoverable">
+     	        <div class="col s12 m4 ">
      	            <p> <i class="material-icons prefix tiny">label</i>  Was the event well synchronised:</p>
      	            <p>
       		            <input class="with-gap" name="group1" type="radio" id="test3"  /><label for="test3">Yes,It was well organized!</label></br>
@@ -125,8 +126,8 @@
     	            </p>
   		        </div>
 
-     	        <div class="col s12 m4  hoverable">
-     	            <p><i class="material-icons prefix tiny">label</i>  Will you like to participate are upcoming events:</p>
+     	        <div class="col s12 m4 ">
+     	            <p><i class="material-icons prefix tiny">label</i>  Will you participate in upcoming events:</p>
     	            <p>
       		        <input class="with-gap" name="group1" type="radio" id="test146"  /><label for="test146">Yes,I will. </label></br>
       		        <input class="with-gap" name="group1" type="radio" id="test14"  /><label for="test14">Sorry,not interested. </label></br>
@@ -134,7 +135,7 @@
     	            </p>
   		        </div>
 
-  		        <div class="col s12 m4 hoverable ">
+  		        <div class="col s12 m4 ">
   		            <p> <i class="material-icons prefix tiny ">label</i>  Will you like to join GDG JSS Noida:</p>
     	            <p>
       		        <input class="with-gap" name="group1" type="radio" id="test21"  /><label for="test21">Yes,feeling excited about it!</label></br>
@@ -189,9 +190,11 @@
           		</div>
         	</footer>
       <!-- footer ends here -->
-
-     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     
+     <script type="text/javascript" src="static/js/jQuery.js"></script>
+     <script type="text/javascript" src="static/js/access.js"></script>
+     <script type="text/javascript" src="static/js/nouislider.js"></script>
      <script type="text/javascript" src="static/js/materialize.min.js"></script> 
-     <!-- /*<script type="text/javascript" src="static/js/access.js"></script>*/ -->          
+        
 </body>
 </html>
