@@ -6484,12 +6484,12 @@ textarea {
 /* Radio With gap */
 [type="radio"].with-gap:checked + label:before {
   border-radius: 50%;
-  border: 2px solid #26a69a; }
+  border: 2px solid #000; }
 
 [type="radio"].with-gap:checked + label:after {
   border-radius: 50%;
-  border: 2px solid #26a69a;
-  background-color: #26a69a;
+  border: 2px solid #000 ;
+  background-color: #000 ;
   z-index: 0;
   -webkit-transform: scale(.5);
   -moz-transform: scale(.5);
@@ -6508,7 +6508,7 @@ textarea {
 /* Disabled style */
 [type="radio"]:disabled:not(:checked) + label:before, [type="radio"]:disabled:checked + label:before {
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.26); }
+  border-color: #000; }
 
 [type="radio"]:disabled + label {
   color: rgba(0, 0, 0, 0.26); }
@@ -6862,7 +6862,7 @@ input[type=range] + .thumb {
   height: 0;
   width: 0;
   border-radius: 50%;
-  background-color: #26a69a;
+  background-color: #000;
   top: 10px;
   margin-left: -6px;
   -webkit-transform-origin: 50% 50%;
