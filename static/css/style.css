@@ -9,7 +9,11 @@ input[type=range] + .thumb
 .input-field label{
 	color: #000 !important;
 }
+<<<<<<< HEAD
 .footer_row{
+=======
+#footer_row{
+>>>>>>> upstream/master
   margin-bottom: 0px !important;
 }
 
@@ -17,9 +21,12 @@ input[type=range] + .thumb
 {
   padding-top: 15px;
 }
+<<<<<<< HEAD
 
 label {
     font-size: 0.8rem;
     color: #000 !important;
 }
 
+=======
+>>>>>>> upstream/master
