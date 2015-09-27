@@ -9,7 +9,7 @@ input[type=range] + .thumb
 .input-field label{
 	color: #000 !important;
 }
-#footer_row{
+.footer_row{
   margin-bottom: 0px !important;
 }
 
