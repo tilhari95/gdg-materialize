@@ -23,5 +23,8 @@ label {
     font-size: 0.8rem;
     color: #000 !important;
 }
+.row{
+	height: 100px !important;
+}
 
 
