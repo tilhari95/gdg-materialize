@@ -1,0 +1,31 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <result-types>
+            <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"></result-type>
+        </result-types>
+        <action name="welcome" class="backend.Utility" method="Enterwebsite" >
+            <result type="tiles" name="success">/user.Home</result>
+        </action>
+
+        <action name="proceed" class="backend.Utility" method="Enterwebsite" >
+            <result type="tiles" name="success">/user.Form</result>
+        </action>
+        <action name="back" class="backend.Utility" method="Enterwebsite" >
+            <result type="tiles" name="success">/user.Back</result>
+        </action>
+        <action name="reset" class="backend.Utility" method="Enterwebsite" >
+            <result type="tiles" name="success">/user.Reset</result>
+        </action>
+        <action name="logout" class="backend.Utility" method="Enterwebsite" >
+            <result type="tiles" name="success">/user.Logout</result>
+        </action>
+        <action name="submit" class="backend.Utility" method="Enterwebsite" >
+            <result type="tiles" name="success">/user.Submit</result>
+        </action>
+    </package>
+</struts>
