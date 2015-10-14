@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 30, 2015 10:47:13 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="backend.FeedbackResponses" table="feedback_responses" catalog="gdgjss" optimistic-lock="version">
+        <id name="srNo" type="java.lang.Integer">
+            <column name="sr_no" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="45" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" not-null="true" />
+        </property>
+        <property name="college" type="string">
+            <column name="college" length="45" not-null="true" />
+        </property>
+        <property name="trade" type="string">
+            <column name="trade" length="25" not-null="true" />
+        </property>
+        <property name="year" type="string">
+            <column name="year" length="10" not-null="true" />
+        </property>
+        <property name="event" type="string">
+            <column name="event" length="45" not-null="true" />
+        </property>
+        <property name="presenterRating" type="int">
+            <column name="presenter_rating" not-null="true" />
+        </property>
+        <property name="contentRating" type="int">
+            <column name="content_rating" not-null="true" />
+        </property>
+        <property name="eventRating" type="int">
+            <column name="event_rating" not-null="true" />
+        </property>
+        <property name="overallRating" type="int">
+            <column name="overall_rating" not-null="true" />
+        </property>
+        <property name="eventSynchronised" type="string">
+            <column name="event_synchronised" length="20" not-null="true" />
+        </property>
+        <property name="attendUpcoming" type="string">
+            <column name="attend_upcoming" length="20" not-null="true" />
+        </property>
+        <property name="joinGdgjss" type="string">
+            <column name="join_gdgjss" length="45" not-null="true" />
+        </property>
+        <property name="suggestions" type="string">
+            <column name="suggestions" length="120" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

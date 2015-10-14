@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 30, 2015 10:47:13 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="backend.Administrators" table="administrators" catalog="gdgjss" optimistic-lock="version">
+        <id name="serialNo" type="java.lang.Integer">
+            <column name="Serial_no" />
+            <generator class="identity" />
+        </id>
+        <property name="adminName" type="string">
+            <column name="admin_name" length="45" not-null="true" />
+        </property>
+        <property name="adminEmail" type="string">
+            <column name="admin_email" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

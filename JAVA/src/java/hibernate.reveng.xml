@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="gdgjss"/>
+  <table-filter match-name="administrators"/>
+  <table-filter match-name="feedback_responses"/>
+  <table-filter match-name="check"/>
+</hibernate-reverse-engineering>
