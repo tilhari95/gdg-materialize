@@ -30,7 +30,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html; charset=UTF-8");
+      response.setContentType("text/html");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -41,8 +41,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("  <html>\n");
+      out.write("<html>\n");
       out.write("    <head>\n");
       out.write("       <meta charset=\"UTF-8\">\n");
       out.write("      <link href=\"http://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\" />\n");
@@ -76,7 +75,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <div class=\"col s6 m4\"><h6 class=\"right\"><a class=\"white-text hoverable\" href=\"http://gdgjss.in\">gdgjss.in</a></h6></div>\n");
       out.write("                </div>\n");
       out.write("            </div>\n");
-      out.write("            <form action=\"logout\">\n");
+      out.write("            <form>\n");
       out.write("            <div class=\"col s12\" style=\"display:inline-block;padding-left:17px;padding-top:10px;\"><button class=\"btn waves-effect waves-light light-blue darken-3 left hoverable left\" type=\"submit\" name=\"action\">Logout</button>\n");
       out.write("            </div>\n");
       out.write("                </form>\n");
@@ -88,11 +87,12 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              <div class=\"row\">\n");
       out.write("                  <div>\n");
       out.write("              <div class=\"input-field col s12 m6 offset-m3\">\n");
-      out.write("                  <select name=\"event\" class=\"browser-default  light-blue lighten-3 hoverable\" />\n");
+      out.write("                  <form action=\"feedbackform.jsp\">\n");
+      out.write("                      <select name=\"event\" class=\"browser-default  light-blue lighten-3 hoverable\" required />\n");
       out.write("                   <option value=\"\" disabled selected>Select event to provide feedback</option>\n");
-      out.write("                   <option value=\"1\">GDG INDUCO</option>\n");
-      out.write("                   <option value=\"2\">LET'S TALK GSOC</option>\n");
-      out.write("                   <option value=\"3\">EXTRA BIT WITH GIT</option>\n");
+      out.write("                   <option value=\"GDG INDUCO\">GDG INDUCO</option>\n");
+      out.write("                   <option value=\"LET'S TALK GSOC\">LET'S TALK GSOC</option>\n");
+      out.write("                   <option value=\"EXTRA BIT WITH GIT\">EXTRA BIT WITH GIT</option>\n");
       out.write("                    <option value=\"4\">other</option> \n");
       out.write("               </select>\n");
       out.write("            </div>\n");
@@ -102,12 +102,12 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\n");
       out.write("            <!-- foooter starts here -->\n");
       out.write("        <footer class=\"page-footer light-blue darken-1 footer_row\" style=\"margin-bottom: 0px\">\n");
-      out.write("                <div class=\"row footer_row\">\n");
+      out.write("                <div class=\"row footer_row\" style=\"margin-bottom: 0px\">\n");
       out.write("                    <div class=\"col l6 s12\">\n");
       out.write("                      <p class=\"white-text text-lighten-4\">Feedbacks helps analyse our potential and efforts , which is very important for any organization. Click the given tab to proceed.</p>\n");
       out.write("                    </div>\n");
       out.write("                    <div class=\"col l4 offset-l2 s12 center-align\" id=\"social_login_button\">\n");
-      out.write("                        <form action=\"proceed\" >\n");
+      out.write("                        \n");
       out.write("                      <button class=\"btn waves-effect waves-light indigo accent-4 centre-align hoverable\" type=\"submit\" name=\"action\">Proceed\n");
       out.write("                <i class=\"material-icons right\">send</i></button></form>\n");
       out.write("                    </div>\n");

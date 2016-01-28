@@ -36,12 +36,12 @@
 
         <!-- foooter starts here -->
         <footer class="page-footer light-blue darken-1 footer_row">
-            <div class="row footer_row">
+            <div class="row footer_row" style="margin-bottom: 0px">
                 <div class="col l6 s12">
                     <p class="white-text text-lighten-4">Your feedbacks are important for us. Thats how we improve..!  Click the given tab to feedback our events.</p>
                 </div>
                 <div class="col l4 offset-l2 s12 center-align" id="social_login_button">
-                    <form action="welcome" >
+                    <form action="home.jsp" >
                         <button class="btn waves-effect waves-light indigo accent-4 centre-align hoverable" type="submit" name="action">Log in with facebook
                         <i class="material-icons right">send</i></button>
                         <form>

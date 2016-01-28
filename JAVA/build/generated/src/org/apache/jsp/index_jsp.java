@@ -79,12 +79,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("        <!-- foooter starts here -->\n");
       out.write("        <footer class=\"page-footer light-blue darken-1 footer_row\">\n");
-      out.write("            <div class=\"row footer_row\">\n");
+      out.write("            <div class=\"row footer_row\" style=\"margin-bottom: 0px\">\n");
       out.write("                <div class=\"col l6 s12\">\n");
       out.write("                    <p class=\"white-text text-lighten-4\">Your feedbacks are important for us. Thats how we improve..!  Click the given tab to feedback our events.</p>\n");
       out.write("                </div>\n");
       out.write("                <div class=\"col l4 offset-l2 s12 center-align\" id=\"social_login_button\">\n");
-      out.write("                    <form action=\"welcome\" >\n");
+      out.write("                    <form action=\"home.jsp\" >\n");
       out.write("                        <button class=\"btn waves-effect waves-light indigo accent-4 centre-align hoverable\" type=\"submit\" name=\"action\">Log in with facebook\n");
       out.write("                        <i class=\"material-icons right\">send</i></button>\n");
       out.write("                        <form>\n");
