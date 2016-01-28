@@ -4,11 +4,9 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/gdgjss?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/gdg?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">tilhari</property>
-    <mapping resource="backend/FeedbackResponses.hbm.xml"/>
-    <mapping resource="backend/Administrators.hbm.xml"/>
-    <mapping resource="backend/Check.hbm.xml"/>
+    <mapping resource="backend/Responses.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

@@ -27,7 +27,7 @@
                 <div class="col s12 light-blue" style="display:inline-block"><h5 class="white-text center" style="font-weight:500"> JSS NOIDA</h5>
                 </div>
                 <div class="col s12 light-blue" >
-                <div class="col m4 "><h6 class="white-text left"> Welcome USERNAME</h6></div>
+                <div class="col m4 "><h6 class="white-text left"> Welcome ORGANIZER</h6></div>
                 <div class="col s4"><h6 class="white-text center hide-on-small-only"> Feedback System</h6></div>
                 <div class="col s6 m4"><h6 class="right"><a class="white-text hoverable" href="http://gdgjss.in">gdgjss.in</a></h6></div>
                 </div>
@@ -44,7 +44,7 @@
               <div class="row">
                   <div>
               <div class="input-field col s12 m6 offset-m3">
-                  <form action="feedbackform.jsp">
+                  <form action="result.jsp">
                       <select name="event" class="browser-default  light-blue lighten-3 hoverable" required />
                    <option value="" disabled selected>Select event to provide feedback</option>
                    <option value="GDG INDUCO">GDG INDUCO</option>
@@ -55,7 +55,7 @@
                </select>
             </div>
               </div>
-               <div class="col s12 m6 offset-m3"><h6 class="center" style="padding-top:20px">Feedback for a particular event can be provided only once.</h6></div>
+               <div class="col s12 m6 offset-m3"><h6 cla            ss="center" style="padding-top:20px">Select a particular event to view feedback.</h6></div>
             </div>
             </div>
             <!-- foooter starts here -->

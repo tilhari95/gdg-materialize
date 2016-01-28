@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class adminpage_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -51,7 +51,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("      <title>GDGJSS|feedback home</title>\n");
       out.write("      <script>\n");
       out.write("\tfunction data(x){\n");
-      out.write("\t\tif(x.action.value==\"\"){\n");
+      out.write("\t\tif(x.action.value===\"\"){\n");
       out.write("\t\t\talert(\"You have not selected any event\");\n");
       out.write("\t\t\treturn false;\n");
       out.write("\t\t}\n");
@@ -70,7 +70,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <div class=\"col s12 light-blue\" style=\"display:inline-block\"><h5 class=\"white-text center\" style=\"font-weight:500\"> JSS NOIDA</h5>\n");
       out.write("                </div>\n");
       out.write("                <div class=\"col s12 light-blue\" >\n");
-      out.write("                <div class=\"col m4 \"><h6 class=\"white-text left\"> Welcome USERNAME</h6></div>\n");
+      out.write("                <div class=\"col m4 \"><h6 class=\"white-text left\"> Welcome ORGANIZER</h6></div>\n");
       out.write("                <div class=\"col s4\"><h6 class=\"white-text center hide-on-small-only\"> Feedback System</h6></div>\n");
       out.write("                <div class=\"col s6 m4\"><h6 class=\"right\"><a class=\"white-text hoverable\" href=\"http://gdgjss.in\">gdgjss.in</a></h6></div>\n");
       out.write("                </div>\n");
@@ -87,17 +87,18 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              <div class=\"row\">\n");
       out.write("                  <div>\n");
       out.write("              <div class=\"input-field col s12 m6 offset-m3\">\n");
-      out.write("                  <form action=\"feedbackform.jsp\">\n");
+      out.write("                  <form action=\"result.jsp\">\n");
       out.write("                      <select name=\"event\" class=\"browser-default  light-blue lighten-3 hoverable\" required />\n");
       out.write("                   <option value=\"\" disabled selected>Select event to provide feedback</option>\n");
       out.write("                   <option value=\"GDG INDUCO\">GDG INDUCO</option>\n");
       out.write("                   <option value=\"LET'S TALK GSOC\">LET'S TALK GSOC</option>\n");
       out.write("                   <option value=\"EXTRA BIT WITH GIT\">EXTRA BIT WITH GIT</option>\n");
-      out.write("                    <option value=\"4\">other</option> \n");
+      out.write("                   <option value=\"MATERIAL DESIGN\">MATERIAL DESIGN</option>\n");
+      out.write("                    \n");
       out.write("               </select>\n");
       out.write("            </div>\n");
       out.write("              </div>\n");
-      out.write("               <div class=\"col s12 m6 offset-m3\"><h6 class=\"center\" style=\"padding-top:20px\">Feedback for a particular event can be provided only once.</h6></div>\n");
+      out.write("               <div class=\"col s12 m6 offset-m3\"><h6 cla            ss=\"center\" style=\"padding-top:20px\">Select a particular event to view feedback.</h6></div>\n");
       out.write("            </div>\n");
       out.write("            </div>\n");
       out.write("            <!-- foooter starts here -->\n");

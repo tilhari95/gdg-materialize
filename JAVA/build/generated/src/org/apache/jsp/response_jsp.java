@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class response_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -81,11 +81,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <footer class=\"page-footer light-blue darken-1 footer_row\">\n");
       out.write("            <div class=\"row footer_row\" style=\"margin-bottom: 0px\">\n");
       out.write("                <div class=\"col l6 s12\">\n");
-      out.write("                    <p class=\"white-text text-lighten-4\">Your feedbacks are important for us. Thats how we improve..!  Click the given tab to feedback our events.</p>\n");
+      out.write("                    <p class=\"white-text text-lighten-4\">Thanks for your feedback.Your response has been successfully recorded..! Click the given tab to go back to home page.</p>\n");
       out.write("                </div>\n");
       out.write("                <div class=\"col l4 offset-l2 s12 center-align\" id=\"social_login_button\">\n");
       out.write("                    <form action=\"home.jsp\" >\n");
-      out.write("                        <button class=\"btn waves-effect waves-light indigo accent-4 centre-align hoverable\" type=\"submit\" name=\"action\">Log in with facebook\n");
+      out.write("                        <button class=\"btn waves-effect waves-light indigo accent-4 centre-align hoverable\" type=\"submit\" name=\"action\">Home\n");
       out.write("                        <i class=\"material-icons right\">send</i></button>\n");
       out.write("                        <form>\n");
       out.write("                </div>\n");
