@@ -1,5 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-  <html>
+<html>
     <head>
        <meta charset="UTF-8">
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -9,7 +8,7 @@
       <title>GDGJSS|feedback home</title>
       <script>
 	function data(x){
-		if(x.action.value==""){
+		if(x.action.value===""){
 			alert("You have not selected any event");
 			return false;
 		}
@@ -33,7 +32,7 @@
                 <div class="col s6 m4"><h6 class="right"><a class="white-text hoverable" href="http://gdgjss.in">gdgjss.in</a></h6></div>
                 </div>
             </div>
-            <form action="logout">
+            <form>
             <div class="col s12" style="display:inline-block;padding-left:17px;padding-top:10px;"><button class="btn waves-effect waves-light light-blue darken-3 left hoverable left" type="submit" name="action">Logout</button>
             </div>
                 </form>
@@ -45,13 +44,14 @@
               <div class="row">
                   <div>
               <div class="input-field col s12 m6 offset-m3">
-                  <form action="proceed">
+                  <form action="feedbackform.jsp">
                       <select name="event" class="browser-default  light-blue lighten-3 hoverable" required />
                    <option value="" disabled selected>Select event to provide feedback</option>
-                   <option value="1">GDG INDUCO</option>
-                   <option value="2">LET'S TALK GSOC</option>
-                   <option value="3">EXTRA BIT WITH GIT</option>
-                    <option value="4">other</option> 
+                   <option value="GDG INDUCO">GDG INDUCO</option>
+                   <option value="LET'S TALK GSOC">LET'S TALK GSOC</option>
+                   <option value="EXTRA BIT WITH GIT">EXTRA BIT WITH GIT</option>
+                   <option value="MATERIAL DESIGN">MATERIAL DESIGN</option>
+                    
                </select>
             </div>
               </div>
@@ -60,7 +60,7 @@
             </div>
             <!-- foooter starts here -->
         <footer class="page-footer light-blue darken-1 footer_row" style="margin-bottom: 0px">
-                <div class="row footer_row">
+                <div class="row footer_row" style="margin-bottom: 0px">
                     <div class="col l6 s12">
                       <p class="white-text text-lighten-4">Feedbacks helps analyse our potential and efforts , which is very important for any organization. Click the given tab to proceed.</p>
                     </div>
