@@ -108,7 +108,7 @@ public final class adminpage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                      <p class=\"white-text text-lighten-4\">Feedbacks helps analyse our potential and efforts , which is very important for any organization. Click the given tab to proceed.</p>\n");
       out.write("                    </div>\n");
       out.write("                    <div class=\"col l4 offset-l2 s12 center-align\" id=\"social_login_button\">\n");
-      out.write("                        \n");
+      out.write("                       <input type=\"hidden\" name=\"sort\" value=\"name\"> \n");
       out.write("                      <button class=\"btn waves-effect waves-light indigo accent-4 centre-align hoverable\" type=\"submit\" name=\"action\">Proceed\n");
       out.write("                <i class=\"material-icons right\">send</i></button></form>\n");
       out.write("                    </div>\n");

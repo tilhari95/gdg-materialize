@@ -49,6 +49,8 @@ public final class result_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+ Session s = NewHibernateUtil.getSessionFactory().openSession();List<Responses> es = s.createCriteria(Responses.class).list(); 
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
@@ -79,8 +81,8 @@ public final class result_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                \n");
       out.write("                \n");
       out.write("        <!-- feedback form starts here -->\n");
-      out.write("        <div class=\"row  green lighten-5 hoverable\" >\n");
-      out.write("            <table class=\"striped centered responsive-table\">\n");
+      out.write("        <div class=\"row  purple lighten-5 hoverable\" >\n");
+      out.write("            <table class=\"highlight centered responsive-table\">\n");
       out.write("        <thead>\n");
       out.write("          <tr>\n");
       out.write("              <th data-field=\"id\">Name</th>\n");
@@ -90,21 +92,21 @@ public final class result_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </thead>\n");
       out.write("\n");
       out.write("        <tbody>\n");
+      out.write("            ");
+ for (Responses e : es) { 
+      out.write("\n");
       out.write("          <tr>\n");
-      out.write("            <td>Alvin</td>\n");
-      out.write("            <td>Eclair</td>\n");
+      out.write("              <td>");
+ out.print(e.getName()); 
+      out.write(" </td>\n");
+      out.write("            <td>");
+ e.getYear(); 
+      out.write("</td>\n");
       out.write("            <td>$0.87</td>\n");
       out.write("          </tr>\n");
-      out.write("          <tr>\n");
-      out.write("            <td>Alan</td>\n");
-      out.write("            <td>Jellybean</td>\n");
-      out.write("            <td>$3.76</td>\n");
-      out.write("          </tr>\n");
-      out.write("          <tr>\n");
-      out.write("            <td>Jonathan</td>\n");
-      out.write("            <td>Lollipop</td>\n");
-      out.write("            <td>$7.00</td>\n");
-      out.write("          </tr>\n");
+      out.write("                   ");
+ } 
+      out.write("\n");
       out.write("        </tbody>\n");
       out.write("      </table>\n");
       out.write("        </div>\n");
